@@ -46,13 +46,13 @@ public class PlayerMovement : MonoBehaviour
 
         if((Input.GetKey(KeyCode.A) ||  Input.GetKey(KeyCode.LeftArrow)) && playerRotation == "right")
         {
-            m_SpriteRenderer.flipX = false;
+            m_SpriteRenderer.flipX = true;
             playerRotation = "left";
         }
 
         if((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) && playerRotation == "left")
         {
-            m_SpriteRenderer.flipX = true;
+            m_SpriteRenderer.flipX = false;
             playerRotation = "right";
         }
     }
