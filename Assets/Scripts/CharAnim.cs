@@ -28,6 +28,7 @@ public class CharAnim : MonoBehaviour {
         anim = GetComponent<Animator>();
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
+        //animation = gameObject.GetComponet<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -72,7 +73,7 @@ public class CharAnim : MonoBehaviour {
             extraJumps--;
         }else if(Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded == true)
         {
-            
+            GetComponent<Animator>().SetTrigger("Dog_Jump");
             rb.velocity = Vector2.up * jumpForce;
         }
         if (isGrounded == true)
