@@ -37,7 +37,7 @@ public class CandyUI : MonoBehaviour
         {
             ChangeImage3();
         }
-        else if (gameInt <= 10)
+        else
         {
             ChangeImage4();
         }

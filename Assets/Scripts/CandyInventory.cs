@@ -17,8 +17,8 @@ public class CandyInventory : MonoBehaviour
         NumberOfCandies++;
     }
 
-    public int ReturnCandyCollected()
+    public void CandyBagCollected()
     {
-        return NumberOfCandies;
+        NumberOfCandies += 100;
     }
 }
