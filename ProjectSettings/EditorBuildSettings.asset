@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 9aea487dce9ba7446914fba095a852a3
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/videoscene.unity
+    guid: 37cbdbbee90c29d4293fad2028774b89
+  - enabled: 1
+    path: Assets/Scenes/Prefabs 1.unity
+    guid: d771924db511b71498391b1921abb1c7
   - enabled: 1
     path: Assets/Scenes/End Screen.unity
     guid: d3319431370a3d94ca269cafb35c7250
