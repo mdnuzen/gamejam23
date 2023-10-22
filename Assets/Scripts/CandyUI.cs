@@ -15,25 +15,43 @@ public class CandyUI : MonoBehaviour
     void Start()
     {
         gameInt = candyInventory.NumberOfCandies;
-        ChangeImage0();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        gameInt = candyInventory.NumberOfCandies;
+        if (gameInt == 0)
+        {
+            ChangeImage0();
+        }
+        else if (gameInt <= 2)
+        {
+            ChangeImage1();
+        }
+        else if (gameInt <= 5)
+        {
+            ChangeImage2();
+        }
+        else if (gameInt <= 7)
+        {
+            ChangeImage3();
+        }
+        else if (gameInt <= 10)
+        {
+            ChangeImage4();
+        }
     }
 
     public void ChangeImage0()
     {
-        UnityEngine.Sprite sprite = Resources.Load<UnityEngine.Sprite>("CandyBucket00.png");
-        Debug.Log(sprite);
+        UnityEngine.Sprite sprite = Resources.Load<UnityEngine.Sprite>("CandyBucket00");
         gameObject.GetComponent<UnityEngine.UI.Image>().sprite = sprite;
     }
 
     public void ChangeImage1()
     {
-        gameObject.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<UnityEngine.Sprite>("Assets/Sprites/CandyBucket01");
+        gameObject.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<UnityEngine.Sprite>("CandyBucket01");
     }
 
     public void ChangeImage2()
