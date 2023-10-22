@@ -17,7 +17,7 @@ public class Candy : MonoBehaviour
         if (candyInventory != null)
         {
             candyInventory.CandyCollected();
-            gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 }

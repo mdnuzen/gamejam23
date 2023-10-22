@@ -25,15 +25,15 @@ public class CandyUI : MonoBehaviour
         {
             ChangeImage0();
         }
-        else if (gameInt <= 2)
+        else if (gameInt <= 3)
         {
             ChangeImage1();
         }
-        else if (gameInt <= 5)
+        else if (gameInt <= 6)
         {
             ChangeImage2();
         }
-        else if (gameInt <= 7)
+        else if (gameInt <= 9)
         {
             ChangeImage3();
         }
